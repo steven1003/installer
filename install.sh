@@ -429,7 +429,7 @@ if [[ "$DOCKER" != "true" ]]; then
 		if [[ ! -d $CATKIN_DIR/src/NaviGator ]]; then
 			instlog "Downloading the NaviGator repository"
 			cd $CATKIN_DIR/src
-			git clone --recursive -q https://github.com/uf-mil/NaviGator.git
+			git clone --recursive -q https://github.com/steven1003/NaviGator.git
 			cd $CATKIN_DIR/src/NaviGator
 			git remote rename origin upstream
 			if [[ ! -z "$NAV_USER_FORK" ]]; then
